@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TestComponent } from './core/components/test/test.component';
 
 const routes: Routes = [
   // {
@@ -20,9 +21,8 @@ const routes: Routes = [
   //     import('./extensions/bdkms/bdkms.module').then((m) => m.BdkmsModule),
   // },
   {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full',
+    path: 'test',
+    component: TestComponent,
   },
 ];
 

@@ -8,9 +8,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from '../material.module';
 import { AppComponent } from './app.component';
+import { TestComponent } from './core/components/test/test.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TestComponent],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
