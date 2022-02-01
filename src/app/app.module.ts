@@ -6,10 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material/core';
 
 import { MaterialModule } from '../material.module';
-import { DashboardComponent } from './core/dashboard/dashboard.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -20,6 +20,6 @@ import { DashboardComponent } from './core/dashboard/dashboard.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [DashboardComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
