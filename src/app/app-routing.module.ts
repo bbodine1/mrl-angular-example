@@ -20,6 +20,10 @@ const routes: Routes = [
   //     import('./extensions/bdkms/bdkms.module').then((m) => m.BdkmsModule),
   // },
   {
+    path: 'testing',
+    component: SoldierDashboardComponent,
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',
