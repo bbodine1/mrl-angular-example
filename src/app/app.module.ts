@@ -8,9 +8,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AppRoutingModule } from './core/app-routing.module';
 import { MaterialModule } from '../material.module';
 import { AppComponent } from './core/app.component';
+import { TopnavComponent } from './shared/components/topnav/topnav.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TopnavComponent],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
