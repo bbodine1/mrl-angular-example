@@ -5,12 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material/core';
 
+import { AppRoutingModule } from './core/app-routing.module';
 import { MaterialModule } from '../material.module';
 import { AppComponent } from './core/app.component';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
