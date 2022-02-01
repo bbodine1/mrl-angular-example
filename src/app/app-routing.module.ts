@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { SoldierDashboardComponent } from './core/views/soldier-dashboard/soldier-dashboard.component';
+
 const routes: Routes = [
   // {
   //   path: 'customers',
