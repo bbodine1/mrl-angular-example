@@ -15,22 +15,20 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "mrl",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/example-app",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/assets"
-            ],
+            "assets": ["src/assets"],
             "styles": [
-              "src/theme.scss",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
@@ -97,23 +95,16 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/assets"
-            ],
+            "assets": ["src/assets"],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "node_modules/"
-              ]
+              "includePaths": ["node_modules/"]
             },
-            "styles": [
-              "src/styles.scss",
-              "src/theme.scss"
-            ],
+            "styles": ["src/styles.scss", "src/theme.scss"],
             "scripts": []
           }
         }
       }
     }
   },
-  "defaultProject": "example-app"
+  "defaultProject": "mrl-angular-example"
 }
