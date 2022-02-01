@@ -10,6 +10,11 @@ import { MaterialModule } from '../material.module';
 import { AppComponent } from './core/app.component';
 import { TopnavComponent } from './shared/components/topnav/topnav.component';
 import { SoldierDashboardComponent } from './core/views/soldier-dashboard/soldier-dashboard.component';
+import {
+  DxTabPanelModule,
+  DxCheckBoxModule,
+  DxTemplateModule,
+} from 'devextreme-angular';
 
 @NgModule({
   declarations: [AppComponent, TopnavComponent, SoldierDashboardComponent],
@@ -22,6 +27,9 @@ import { SoldierDashboardComponent } from './core/views/soldier-dashboard/soldie
     MatNativeDateModule,
     MaterialModule,
     ReactiveFormsModule,
+    DxTabPanelModule,
+    DxCheckBoxModule,
+    DxTemplateModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

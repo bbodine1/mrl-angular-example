@@ -1,24 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
-
-import {
-  DxTabPanelModule,
-  DxCheckBoxModule,
-  DxTemplateModule,
-} from 'devextreme-angular';
-
-import { Company, Service } from './topnav.service';
+import { Component } from '@angular/core';
+import { Company, Service } from './app.service';
 
 @Component({
   selector: 'mrl-topnav',
   templateUrl: './topnav.component.html',
   styleUrls: ['./topnav.component.scss'],
+  providers: [Service],
+  preserveWhitespaces: true,
 })
-export class TopnavComponent implements OnInit {
-  @Input() title: string;
+export class TopnavComponent {
+  companies: Company[];
 
-  constructor() {
-    this.title = '';
+  itemCount: number;
+
+  constructor(service: Service) {
+    this.companies = service.getCompanies();
+    this.itemCount = this.companies.length;
   }
-
-  ngOnInit(): void {}
 }
