@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Company, Service } from './app.service';
+import { Company, Service } from './topnav.service';
 
 @Component({
   selector: 'mrl-topnav',
