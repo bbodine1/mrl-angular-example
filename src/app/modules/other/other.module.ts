@@ -7,9 +7,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material/core';
 
 import { MaterialModule } from '../../../material.module';
+import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TestingComponent
+  ],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
@@ -20,5 +23,6 @@ import { MaterialModule } from '../../../material.module';
     MaterialModule,
     ReactiveFormsModule,
   ],
+  bootstrap: [TestingComponent],
 })
 export class OtherModule {}
