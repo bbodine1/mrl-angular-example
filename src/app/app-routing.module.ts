@@ -16,11 +16,11 @@ const routes: Routes = [
   //   loadChildren: () =>
   //     import('./extensions/orders/orders.module').then((m) => m.OrdersModule),
   // },
-  // {
-  //   path: 'bdkms',
-  //   loadChildren: () =>
-  //     import('./extensions/bdkms/bdkms.module').then((m) => m.BdkmsModule),
-  // },
+  {
+    path: 'other',
+    loadChildren: () =>
+      import('./modules/other/other.module').then((m) => m.OtherModule),
+  },
   {
     path: 'testing',
     component: SoldierDashboardComponent,
