@@ -5,15 +5,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material/core';
+import { AppRoutingModule } from '../../app-routing.module';
 
 import { MaterialModule } from '../../../material.module';
 import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
-  declarations: [
-    TestingComponent
-  ],
+  declarations: [TestingComponent],
   imports: [
+    AppRoutingModule,
     CommonModule,
     BrowserAnimationsModule,
     BrowserModule,
